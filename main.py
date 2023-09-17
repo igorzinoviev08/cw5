@@ -16,7 +16,7 @@ for employer_name, employer_id in EMPLOYER_MAP.items():
             "from") is not None else 0
         db_manager.insert_all_vacancies_table(name=vacancy_name, experience=vacancy_experience, salary=vacancy_from,
                                               employer=employer_id)
-    db_manager.insert_company_table(name=employer_name, hh_id=id)
+    db_manager.insert_company_table(name=employer_name, hh_id=employer_id)
 
 db_manager.disconnect_db()
 

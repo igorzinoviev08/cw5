@@ -14,7 +14,7 @@ for employer_name, employer_id in EMPLOYER_MAP.items():
         vacancy_from = int(
             vacancy["salary"]["from"]) if vacancy.get("salary") is not None and vacancy["salary"].get(
             "from") is not None else 0
-        db_manager.insert_all_vacancies_table(name=vacancy_name, experience=vacancy, salary=vacancy_from,
+        db_manager.insert_all_vacancies_table(name=vacancy_name, experience=vacancy_experience, salary=vacancy_from,
                                               employer=employer_id)
     db_manager.insert_company_table(name=employer_name, hh_id=id)
 

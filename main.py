@@ -18,5 +18,9 @@ for employer_name, employer_id in EMPLOYER_MAP.items():
                                               employer=employer_id)
     db_manager.insert_company_table(name=employer_name, hh_id=employer_id)
 
+db_manager.get_all_vacancies()
+db_manager.get_companies_and_vacancies_count()
+db_manager.get_vacancies_with_higher_salary()
+db_manager.get_avg_salary()
+db_manager.get_vacancies_with_keyword(str(input("Введите слово")))
 db_manager.disconnect_db()
-

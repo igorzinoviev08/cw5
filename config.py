@@ -2,7 +2,7 @@
 from pathlib import Path
 
 QUERIES_PATH = Path(__file__).resolve().parent / 'database' / 'queries.sql'
-DB_CONNECT = f"postgresql://postgres:{'manager1'}@localhost:5432/cw5"
+
 EMPLOYER_MAP = {
     "РутКод": 8642172,
     "AVC": 1626408,
